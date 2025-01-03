@@ -1,0 +1,25 @@
+# Kconfig file for package freedap
+menuconfig PKG_USING_FREEDAP
+    bool "free dap: firmware download tool"
+    default n
+
+if PKG_USING_FREEDAP
+
+    config PKG_FREEDAP_PATH
+        string
+        default "/packages/tools/freedap"
+
+    choice
+        prompt "Version"
+        help
+            Select the package version
+
+        config PKG_USING_FREEDAP_LATEST_VERSION
+            bool "latest"
+    endchoice
+
+    config PKG_FREEDAP_VER
+       string
+       default "latest"    if PKG_USING_FREEDAP_LATEST_VERSION
+
+endif

@@ -1,0 +1,27 @@
+{
+  "name": "freedap",
+  "description": "firmware download tool",
+  "description_zh": "下载器",
+  "enable": "PKG_USING_BLACKMAGIC",
+  "keywords": [
+    "freedap"
+  ],
+  "category": "tools",
+  "author": {
+    "name": "koendv",
+    "email": "koen@kdvelectronics.eu",
+    "github": "koendv"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/koendv/freedap-rtthread",
+  "homepage": "https://github.com/koendv/freedap-rtthread#README.md",
+  "doc": "https://github.com/ataradov/free-dap",
+  "site": [
+    {
+      "version": "latest",
+      "URL": "https://github.com/koendv/freedap-rtthread.git",
+      "filename": "",
+      "VER_SHA": "main"
+    }
+  ]
+}
